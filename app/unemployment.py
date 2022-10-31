@@ -1,19 +1,14 @@
-'''import requests
-import json
-from pprint import ppgrint
 
-
-#working in app/unemployment_report.py file
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
-
-request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
-'''
 
 import os
 import json
 from pprint import pprint
 
+from dotenv import load_dotenv
 import requests
+from plotly.express import line
+
+load_dotenv()
 
 API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
 
@@ -25,4 +20,19 @@ parsed_response = json.loads(response.text)
 print(type(parsed_response))
 pprint(parsed_response)
 
-breakpoint()
+#breakpoint()
+
+
+data = parsed_response["data"]
+
+
+# Challenge A
+#
+#Latest unemployment rate
+
+print("-------------------------")
+print("Latest unemployment rate:")
+#print(data[0])
+print(f"{data[0]['value']}%", "as of", data[0]["date"])
+
+breakpoint
