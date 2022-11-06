@@ -8,6 +8,11 @@ Create and activate a virtual environment
 conda create -n unemployment-env python=3.8
 '''
 
+Activate environment 
+'''sh
+conda activate unemployment-env
+'''
+
 Install the necessary packages
 
 '''sh
@@ -21,7 +26,7 @@ Obtain an API Key from ALPHAVANTAGE.
 
 Then create a local ".env" file and provide the key like this:
 '''sh
-ALPHAVANTAGE_API_KEY = "abc123"
+ALPHAVANTAGE_API_KEY = "..."
 '''
 
 Then create a .gitignore file of the python flavor to help hide the .env file
@@ -37,3 +42,8 @@ python app/unemployment.py
 '''
 
 
+Run stocks report:
+
+```sh
+python app/stocks.py
+```

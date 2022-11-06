@@ -49,6 +49,7 @@ print("NO MONTHS:", len(this_year))
 
 # Challenge C
 #Plotting unemployment line
+#Will open chart in browser
 
 
 dates = [d["date"] for d in data]
