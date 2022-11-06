@@ -1,4 +1,7 @@
+# this is the "test/game_test.py" file
+
 from app.game import determine_winner
+
 
 def test_winning_choice():
     assert determine_winner(user_choice="rock", computer_choice="paper") == "paper"
