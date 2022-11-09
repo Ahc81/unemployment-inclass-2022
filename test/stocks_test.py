@@ -1,6 +1,6 @@
 # this is the "test/stocks_test.py" file...
 
-from app.stocks import format_usd, fetch_stocks_data
+from app.Stocks import format_usd, fetch_stocks_data
 
 from pandas import DataFrame
 
