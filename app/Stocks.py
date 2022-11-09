@@ -47,3 +47,5 @@ if __name__ == "__main__":
 
     print("HIGH:", format_usd(df["high"].max()))
     print("LOW:", format_usd(df["low"].min()))
+
+    #changed
